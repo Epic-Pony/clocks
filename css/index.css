@@ -1,0 +1,5 @@
+* {padding:0;margin:0;list-style:none;box-sizing:border-box;}
+body {background-color: #1b1e2b;font-size: 70px;color: #fff;}
+.clocks {width: 100vw;height: 100vh;display: flex;flex-direction:column;justify-content: center;align-items: center;}
+.dateInfos {font-size: 2.8em;font-weight: bold;}
+.times {font-size: 4.7em;}
