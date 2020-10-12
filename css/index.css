@@ -1,5 +1,4 @@
-* {padding:0;margin:0;list-style:none;box-sizing:border-box;}
-body {background-color: #1b1e2b;font-size: 70px;color: #fff;}
-.clocks {width: 100vw;height: 100vh;display: flex;flex-direction:column;justify-content: center;align-items: center;}
-.dateInfos {font-size: 2.8em;font-weight: bold;}
-.times {font-size: 4.7em;}
+* {padding:0;margin:0;list-style:none;box-sizing:border-box;text-align: center;overflow: hidden;}
+body {background-color: #0d1320;font-size: 70px;color: #e2ecfd;font-weight: bold;}
+.dateInfos {font-size: 28vh;margin-top: 50px;}
+.times {font-size: 56vh;line-height: 56vh;}

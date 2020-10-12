@@ -1,11 +1,13 @@
 /*
- * @Description: It was written by Pony
+ * @Description: 优化触发秒钟点的显示时间，触发方式
  * @Version: 2.0
  * @Autor: Pony
  * @Date: 2020-10-09 09:30:20
  * @LastEditors: Pony
- * @LastEditTime: 2020-10-09 13:55:51
+ * @LastEditTime: 2020-10-12 22:22:30
  */
+let visibleDate = true; //显示时间点
+
 function disptime() {
     //1.组装需要的时间
     let now = new Date(); //现在的时间
@@ -29,11 +31,12 @@ function disptime() {
     mMins.innerHTML = min;//显示分钟
 
 
-    points.style.visibility = 'hidden';
-    setTimeout(_ => {
-        points.style.visibility = 'visible';
-    },500);
+    !visibleDate?(points.style.visibility = 'hidden') : (points.style.visibility = 'visible');
+    //自动显示隐藏
+    visibleDate = !visibleDate;
 
     let myTime = setTimeout("disptime()", 1000);
 };
+
+//触发回掉
 disptime();
